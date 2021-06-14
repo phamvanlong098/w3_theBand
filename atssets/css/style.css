@@ -206,18 +206,12 @@ html {
     /* overflow: hidden; */
 }
 
-#content .member-item {
-    float:left;
-    width: 33.3333%;
-    text-align: center;
-}
-
-#content .member-item .member-name {
+#content .member-name {
     font-size: 15px;
     
 }
 
-#content .member-item .member-avatar {
+#content .member-avatar {
     margin-top: 15px;
     width: 154px;
     border-radius: 4px;
@@ -263,8 +257,6 @@ html {
 
 .places-list {
     margin-top: 32px;
-    margin-left: -8px;
-    margin-right: -8px;
     padding-bottom: 40px;
 }
 
@@ -272,9 +264,7 @@ html {
 .places-list .place-item {
     background-color: #fff;
     background-clip: content-box;
-    width: 33.3333%;
-    padding: 0 8px;
-    float: left;
+    
 }
 
 .places-list .place-img {

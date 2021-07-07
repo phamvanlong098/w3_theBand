@@ -1,0 +1,15 @@
+
+@media (max-width: 739px) {
+    #nav li {
+        display: block;
+    }
+
+    #header {
+       overflow: hidden;
+
+    }
+
+    #header .search-icon {
+        display: none;
+    }
+}

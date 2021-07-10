@@ -30,14 +30,17 @@ html {
 }
 
 .btn {
+    display: inline-block;
     padding: 10px 16px;
     background-color: #000;
     color: #fff;
     border:none;
     text-decoration: none;
+    text-align: center;
 }
 
 .btn:hover {
+    cursor: pointer;
     background-color: #ddd;
     color: #000;
 }
@@ -91,7 +94,12 @@ html {
     right: 0;
     height: 46px;
     background-color: black;
-    z-index: 1;
+    z-index: 2;
+}
+
+
+#nav {
+    display: inline-block;
 }
 
 #nav li {
@@ -155,8 +163,8 @@ html {
     font-size: 10px;
 }
 
-#nav {
-    display: inline-block;
+#header .menu-icon {
+    display: none;
 }
 
 #header .menu-icon,
@@ -177,10 +185,14 @@ html {
     cursor: pointer;
 }
 
+#overlay {
+    display: none;
+}
+
 #slider {
     margin-top: 46px;
     padding-top : 50%;
-    background: url('/atssets/img/slider/slider1.jpg') top center / cover no-repeat;
+    background: url('../img/slider/slider1.jpg') top center / cover no-repeat;
     position: relative;
 }
 
@@ -200,8 +212,10 @@ html {
 }
 
 #slider .text-description {
+    font-weight: 600;
     font-size: 15px;
     margin-top: 25px;
+    text-shadow: 0 0 1px #000;
 }
 
 #content {
@@ -242,7 +256,7 @@ html {
 }
 
 #content .member-list {
-    margin-top: 48px;
+    margin-top: 32px;
     /* overflow: hidden; */
 }
 
@@ -296,7 +310,7 @@ html {
 }
 
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     padding-bottom: 40px;
 }
 
@@ -313,24 +327,24 @@ html {
 
 .places-list .place-body {
     font-size: 15px;
+    padding: 0px 16px 12px;
 }
 
 .places-list .place-body .place-heading{
-    margin: 16px 16px;
+    margin: 16px 0px;
 }
 
 .places-list .place-body .place-time{
-    margin: 16px 16px;
+    margin: 16px 0px;
     opacity: 0.6;
 }
 
 .places-list .place-body .place-desc{
-    margin: 16px 16px;
+    margin: 16px 0px;
 }
 
-.places-list .place-body .place-buy-btn{
-    display: inline-block;
-    margin: 0 16px 16px;
+.place-body .buy-btn {
+    /* width: 60%; */
 }
 
 /* Contact */
@@ -339,7 +353,7 @@ html {
 }
 
 .contact-content {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
 .contact-info {
@@ -366,7 +380,7 @@ html {
 #content .map {
     width: 100%;
     padding-top: 56%;
-    background: url("/atssets/img/content/map.jpg") top center / cover no-repeat;
+    background: url("../img/content/map.jpg") top center / cover no-repeat;
     filter: grayscale(50%);
 }
 

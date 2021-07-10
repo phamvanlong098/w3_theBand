@@ -7,6 +7,7 @@
     <title>The Band</title>
     <link rel="shortcut icon" href="https://icons-for-free.com/iconfiles/png/512/windows+10+cinema+icons+Music-1320567863301220855.png" type="image/x-icon">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./atssets/css/grid.css">
     <link rel="stylesheet" href="./atssets/css/style.css">
     <link rel="stylesheet" href="./atssets/css/responsive.css">
     <link rel="stylesheet" href="./atssets/font/themify-icons/themify-icons.css">
@@ -36,6 +37,8 @@
             <div id = "menu-btn" class="menu-icon ti-menu"></div>
         </div>
 
+        <div id="overlay"></div>
+
         <div id="slider">
             <div class="text-content">
                 <h2 class="text-heading">New York</h2>
@@ -53,22 +56,24 @@
                     adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 
-                <div class="row member-list">
-                    <div class="col col-third text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./atssets/img/content/member.jpg" alt="Name" class="member-avatar">    
+                <div class="grid">
+                    <div class="row member-list">
+                        <div class="col l-4 m-4 c-12 mt-16 text-center">
+                            <p class="member-name">Name</p>
+                            <img src="./atssets/img/content/member.jpg" alt="Name" class="member-avatar">    
+                        </div>
+    
+                        <div class="col l-4 m-4 c-12 mt-16 text-center">
+                            <p class="member-name">Name</p>
+                            <img src="./atssets/img/content/member.jpg" alt="Name" class="member-avatar">    
+                        </div>
+    
+                        <div class="col l-4 m-4 c-12 mt-16 text-center">
+                            <p class="member-name">Name</p>
+                            <img src="./atssets/img/content/member.jpg" alt="Name" class="member-avatar">    
+                        </div>
+    
                     </div>
-
-                    <div class="col col-third text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./atssets/img/content/member.jpg" alt="Name" class="member-avatar">    
-                    </div>
-
-                    <div class="col col-third text-center">
-                        <p class="member-name">Name</p>
-                        <img src="./atssets/img/content/member.jpg" alt="Name" class="member-avatar">    
-                    </div>
-
                 </div>
 
             </div>
@@ -85,35 +90,36 @@
                     </ul>
                     
                     <div class="row places-list">
-                        <div class="col col-third place-item">
+                        <div class="col l-4 m-4 c-12 mt-16 place-item">
                             <img src="./atssets/img/content/place1.jpg" alt="New York" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="btn place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn buy-btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
 
-                        <div class="col col-third place-item">
+                        <div class="col l-4 m-4 c-12 mt-16 place-item">
                             <img src="./atssets/img/content/place2.jpg" alt="Paris" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="btn place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn buy-btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
 
-                        <div class="col col-third place-item">
+                        <div class="col l-4 m-4 c-12 mt-16 place-item">
                             <img src="./atssets/img/content/place3.jpg" alt="San Francisco" class="place-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="btn place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn buy-btn s-full-width">Buy Tickets</a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -122,30 +128,32 @@
              <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-slogan">Fan? Drop a note!</p>
-                <div class="row contact-content">
-                    <div class="col col-half contact-info">
-                        <p><i class="ti-location-pin"></i>Chicago, US</p>
-                        <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                        <p><i class="ti-email"></i>Email: mail@mail.com</p>
-                    </div>
-
-                    <div class="col col-half contact-form">
-                        <form action="">
-                            <div class="row">
-                                <div class="col col-half">
-                                    <input type="Name" placeholder="Name" required class="form-control">
+                <div class="grid">
+                    <div class="row contact-content">
+                        <div class="col l-6 m-6 c-12 mt-16 contact-info">
+                            <p><i class="ti-location-pin"></i>Chicago, US</p>
+                            <p><i class="ti-mobile"></i>Phone: +00 151515</p>
+                            <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                        </div>
+    
+                        <div class="col l-6 m-6 c-12 mt-16 contact-form">
+                            <form action="">
+                                <div class="row">
+                                    <div class="col l-6 m-6 c-12">
+                                        <input type="Name" placeholder="Name" required class="form-control">
+                                    </div>
+                                    <div class="col l-6 m-6 c-12 s-mt-8">
+                                        <input type="Email" placeholder="Email" required class="form-control">
+                                    </div>
                                 </div>
-                                <div class="col col-half">
-                                    <input type="Email" placeholder="Email" required class="form-control">
+                                <div class="row mt-8">
+                                    <div class="col l-12 m-12 c-12">
+                                        <input type="text" placeholder="Message" required class="form-control">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row mt-8">
-                                <div class="col col-full">
-                                    <input type="text" placeholder="Message" required class="form-control">
-                                </div>
-                            </div>
-                            <input class="btn pull-right mt-16" type="submit" value="SEND" >
-                        </form>
+                                <input class="btn pull-right mt-16 s-full-width" type="submit" value="SEND" >
+                            </form>
+                        </div>
                     </div>
                 </div>
                 
@@ -171,27 +179,44 @@
         var header = document.getElementById('header');
         var menuBtn = document.getElementById('menu-btn');
         var headerHeight = header.clientHeight;
+        var overlay = document.getElementById('overlay');
 
         // dong mo menu
         menuBtn.onclick = function() {
             var isClosed = header.clientHeight === headerHeight;
             if(isClosed){
                 header.style.height = 'auto';
+                overlay.style.display = 'block';
             }
             else {
                 header.style.height = null;
+                overlay.style.display = 'none';
             }
         }
 
-        // dong menu khi nhap
+        overlay.onclick = function() {
+            header.style.height = null;
+            overlay.style.display = 'none';
+        }
+
+        // dong menu khi nhap item
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for(var i = 0; i < menuItems.length; i++) {
             var menuItem = menuItems[i];
-            
-            menuItem.onclick = function(){
-                header.style.height = null;
+           
+            menuItem.onclick = function(event){
+                var hasSubnav = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if(hasSubnav){
+                    event.preventDefault();
+                }
+                else{
+                    header.style.height = null;
+                    overlay.style.display = 'none';
+                }
             }
         }
+
+
 
 
     </script>

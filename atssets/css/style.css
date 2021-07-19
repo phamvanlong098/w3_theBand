@@ -84,7 +84,7 @@ html {
 
 /* Main */
 #main {
-    
+    position: relative;
 }
 
 #header {
@@ -187,6 +187,14 @@ html {
 
 #overlay {
     display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    opacity: 0.5;
+    z-index: 1;
 }
 
 #slider {
@@ -421,3 +429,116 @@ html {
 }
 
 
+.modal {
+    position: fixed;
+    top: 46px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.modal-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 400px;
+    background-color: #fff;
+    z-index: 2;
+    
+}
+
+.modal-header {
+    display: flex;
+    height: 139px;
+    background-color: #009688;
+    align-items: center;
+    justify-content: center;
+    
+    letter-spacing: 8px;
+    font-size: 28px;
+    color: #fff;
+    
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    padding: 16px 8px;
+}
+
+.modal__close-btn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 0px 16px;
+}
+
+.modal-body div {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body label {
+    font-size: 15px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.modal-body i {
+    margin-right: 4px;
+}
+
+.modal-body input {
+    padding: 8px;
+    font-size: 15px;
+}
+
+.modal-body .modal-body__pay-btn {
+    display: flex;
+    height: 50px;
+    background-color: #009688;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 16px 0;
+    color: #fff;
+}
+
+.modal-body__pay-btn:hover {
+    background-color: #ddd;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-footer {
+    display: flex;
+    align-self: flex-end;
+    margin: 16px 16px 32px;
+}

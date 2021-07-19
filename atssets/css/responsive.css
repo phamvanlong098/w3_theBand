@@ -13,8 +13,7 @@
     }
 
     #header {
-       overflow: hidden;
-
+        overflow: hidden;
     }
 
     #header .search-icon {
@@ -54,12 +53,7 @@
     }
 
     #overlay {
-        position: absolute;
-        width: 100vw;
-        height: 900vh;
-        background-color: #000;
-        opacity: 0.5;
-        z-index: 1;
+        display: block;
     }
 
     .contact-form .form-control {

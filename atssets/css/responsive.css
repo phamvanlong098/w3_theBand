@@ -51,11 +51,7 @@
     #content .member-avatar {
         width: auto;
     }
-
-    #overlay {
-        display: block;
-    }
-
+    
     .contact-form .form-control {
         padding: 14px;
     }
